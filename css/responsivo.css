@@ -67,8 +67,7 @@ main{
     height: 100vh;
     display: flex;
     justify-content: center;
-    animation: animate 511789
-    s ease infinite;
+    animation: animate 5s ease infinite;
 }
 
 
