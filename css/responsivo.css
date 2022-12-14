@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+    align-items: justify;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    flex-wrap: wrap;
+
+}
+
+a{
+    text-decoration:none;
+    font-weight: 600;
+    padding-right: 10px;
+    
+}
+nav a:hover{
+    background: rgb(202, 159, 212);
+    color: rgb(218, 104, 166);
+    
+}
+h2{
+    font-size: xxx-large;
+}
+
+header{
+    background-color: white;
+    border: 3px solid purple;
+    font-size: x-large;
+    border-radius: 5px;
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    text-transform:unset;  
+}
+
+    
+.logo{
+    display: flex;
+    align-items: center;
+    
+} 
+.logo img{
+    height: auto;
+    margin-right: 3px;
+
+}
+.primer{
+    text-align: center;
+    font-size: 30px;
+    color: blueviolet;
+    width: 100%;
+    float: left;  
+
+}
+
+main{
+    z-index: 0;
+    background: linear-gradient(-45deg, rgb(238, 216, 216), pink, lightblue, rgb(228, 171, 220));
+    background-size: 400% 400%;
+    width: 100%;
+    height: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    animation: animate 511789
+    s ease infinite;
+}
+
+
+.parrafo{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    float: left;
+    justify-content: justify;
+    text-align: justify;
+    color: rgb(78, 13, 139);
+    padding-top: 2px;
+    padding: 10px 0px;
+    font-size: 15px;
+    line-height: 3;
+    float: left;   
+    
+}
+.parrafo img{
+    width: 350px;
+    height: 350px;
+    border: 3px solid purple;
+    border-radius: 10px;
+    display: flex;
+    text-align: justify;
+    float: left;
+    margin-left: 10px;
+}
+.parrafo p{
+    padding-left: 10px;
+    padding-right: 20px;
+    float: left;
+    padding-top: 0px;
+    margin-right: 5px;
+}
+
+footer{
+    background-color: rgb(235, 190, 235);
+    color: aliceblue;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    display: flex;
+
+}
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    }
+
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**{background-image: linear-gradient
+    (to bottom,
+    rgba(255, 255, 0, 0.753),
+    rgba(0, 0, 255, 0.5)
+  ), url("./imagenes/bgimage.jpg");
+
+/* Valores globales */
+    /*background-image: inherit;
+    background-image: initial;
+    background-image: revert;
+    background-image: revert-layer;
+    background-image: unset;
+    box-sizing: border-box;
+    align-items: justify;
+    margin-left: auto;
+    margin-right:auto;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+        
+        background-color: 
+        border:4px solid rgba(161, 63, 180, 0.904);
+        border-radius:
+        10px;
+        padding: 2px;
+        margin: 16 px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: :right;
+        font-size: 12px;
+        
+}
+
+div { 
+    height: 100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+header, 
+nav,
+main,
+footer {
+    border: 2px solid rgba(44, 1, 54, 0.904);
+    border-radius: 10px;
+    justify-content: right;
+    padding: 20px;
+}
+header,
+nav,
+footer {
+    width: 100%;
+}
+    
+header{
+    display: flex;
+}
+
+.rem {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    font-size: 18px;
+    font-style: oblique;
+    color:rgba(85, 6, 81, 0.904)
+}
+.em {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-style: oblique;
+    color:rgba(173, 28, 161, 0.904);
+}
+.p1 { 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(44, 1, 44);  
+}    
+.img {
+    width: 335px;;
+    height: 165px;
+    border-radius: 8px;
+    }
+nav { 
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    }
+.imgn{
+    width: 55px;
+    height:35px;
+    border: 1px solid rgba(54, 3, 54, 0.904);
+}
+main, {
+    height: 340px;
+    text-align: justify;
+    text-size-adjust: auto;
+    }
+main {
+    width: 100%;   
+}
+
+.imgf {
+    width: 35px;
+    height: 35px;
+}
+footer{
+    height: 48px;
+    line-height: 48px;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    header, main, footer { 
+    
+    border: 2px solid rgba(209, 7, 175, 0.904);
+    border-radius: 10px;
+    justify-content: center;
+    padding: 2px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header, main, footer { 
+        
+        border: 2px solid rgba(124, 26, 83, 0.904);
+        border-radius: 10px;
+        justify-content: center;
+        padding: 2px;
+}
+}
